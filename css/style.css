@@ -455,23 +455,17 @@ img {
                  HEADER
 =============================================*/
 .main-header {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    height: 46px;
-    margin-top: 15px;
-    margin-left: 408px;
+    height: 61px;
+    margin-bottom: -61px;
     background: transparent;
 }
 
 .main-header-logo {
-    display: block;
     float: left;
     margin-right: 27px;
 }
 
 .main-header-nav__list {
-    display: block;
     float: left;
     padding: 0;
     margin: 0;
@@ -562,6 +556,10 @@ h2 {
                   INDEX.HTML
 =============================================*/
 /*=========== index-hero ===========*/
+main {
+    overflow: hidden;
+}
+
 .index-hero {
     padding-bottom: 87px;
     background: #45B5EB url("../img/index-hero-BG.png") center center no-repeat;
@@ -599,8 +597,19 @@ h2 {
 
 /*=========== index-solutions ===========*/
 .index-solutions {
+    position: relative;
     margin-top: 80px;
     margin-bottom: 58px;
+}
+
+.index-solutions::before {
+    position: absolute;
+    content: "";
+    z-index: -5;
+    right: -15px;
+    bottom: -380px;
+    width: 380px;
+    height: 1151px;
     background: url("../img/index-solutions-BG.png") center center no-repeat;
 }
 
@@ -871,8 +880,9 @@ h2 {
 
 /*=========== index-advantages ===========*/
 .index-advantages {
+    position: relative;
     padding-top: 52px;
-    padding-bottom: 61px;
+    padding-bottom: 0px;
     text-align: center;
     font-size: 0;
 }
@@ -881,19 +891,30 @@ h2 {
     max-width: 1200px;
 }
 
+.index-advantages::before {
+    position: absolute;
+    content: "";
+    right: -15px;
+    bottom: -300px;
+    width: 387px;
+    height: 757px;
+    background: url("../img/index-advantages-BG.png") center center no-repeat;
+}
+
 .index-advantages__heading {
     margin-bottom: 50px;
 }
 
 .index-advantages__item {
     display: inline-block;
+    vertical-align: top;
     position: relative;
     width: 220px;
-    height: 211px;
+    min-height: 211px;
     margin-top: 17px;
     margin-right: 20px;
+    margin-bottom: 14px;
     text-decoration: none;
-    border: 1px solid #F4F4F4;
 }
 
 .index-advantages__item:hover {
@@ -916,7 +937,39 @@ h2 {
 }
 
 .index-advantages--icon-security {
-    background: url("../img/index-advantages--icon-security.png") center center no-repeat;
+    background: url("../img/index-advantages--icon-security.png") center 48px no-repeat;
+}
+
+.index-advantages--icon-battary {
+    background: url("../img/index-advantages--icon-battary.png") center 60px no-repeat;
+}
+
+.index-advantages--icon-box {
+    background: url("../img/index-advantages--icon-box.png") center 50px no-repeat;
+}
+
+.index-advantages--icon-note {
+    background: url("../img/index-advantages--icon-note.png") center 50px no-repeat;
+}
+
+.index-advantages--icon-antenna {
+    background: url("../img/index-advantages--icon-antenna.png") center 44px no-repeat;
+}
+
+.index-advantages--icon-cert {
+    background: url("../img/index-advantages--icon-cert.png") center 50px no-repeat;
+}
+
+.index-advantages--icon-efficient {
+    background: url("../img/index-advantages--icon-efficient.png") center 45px no-repeat;
+}
+
+.index-advantages--icon-gear {
+    background: url("../img/index-advantages--icon-gear.png") center 37px no-repeat;
+}
+
+.index-advantages--icon-special {
+    background: url("../img/index-advantages--icon-special.png") center 45px no-repeat;
 }
 
 .index-advantages__text {
@@ -944,9 +997,10 @@ h2 {
 }
 
 .index-family-item__line {
-    width: 100%;
+    min-width: 1170px;
     height: 1px;
     margin-bottom: 42px;
+    margin-left: -15px;
     opacity: .7;
     background-color: #FFFFFF;
 }
@@ -1120,8 +1174,19 @@ h2 {
 
 /*=========== index-brands ==========*/
 .index-brands {
+    position: relative;
     padding-top: 47px;
     margin-bottom: 70px;
+}
+
+.index-brands::before {
+    position: absolute;
+    content: "";
+    right: -15px;
+    bottom: -100px;
+    width: 230px;
+    height: 522px;
+    background: url("../img/index-brands-BG.png") center center no-repeat;
 }
 
 .index-brands__heading {
