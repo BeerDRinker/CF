@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "PTSansPro", sans-serif;
+    font-family: "PTSansPro";
   font-weight: 400;
   font-style: normal;
 
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: "PTSansPro", sans-serif;
+    font-family: "PTSansPro";
   font-weight: 700;
   font-style: normal;
 
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-    font-family: "GothamPro", sans-serif;
+    font-family: "GothamPro";
   font-weight: 400;
   font-style: normal;
 
@@ -28,7 +28,7 @@
 }
 
 @font-face {
-    font-family: "GothamPro", sans-serif;
+    font-family: "GothamPro";
   font-weight: 700;
   font-style: normal;
 
@@ -873,6 +873,8 @@ h2 {
 .index-advantages {
     padding-top: 52px;
     padding-bottom: 61px;
+    text-align: center;
+    font-size: 0;
 }
 
 .index-advantages .container {
@@ -884,8 +886,7 @@ h2 {
 }
 
 .index-advantages__item {
-    display: block;
-    float: left;
+    display: inline-block;
     position: relative;
     width: 220px;
     height: 211px;
@@ -912,6 +913,10 @@ h2 {
 
 .index-advantages__item:nth-of-type(5) {
     margin-right: 0;
+}
+
+.index-advantages--icon-security {
+    background: url("../img/index-advantages--icon-security.png") center center no-repeat;
 }
 
 .index-advantages__text {
