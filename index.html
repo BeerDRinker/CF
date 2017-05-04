@@ -17,19 +17,22 @@
 <body>
     <header class="main-header container">
         <nav class="main-header-nav">
-            <div class="main-header-logo">
+            <div class="main-header-logo"></div>
+            <div id="bNavBtn">
                 <a class="main-header-logo__link" href="#"><img src="./img/main-header-logo.png" alt="logo"></a>
             </div>
-            <ul class="main-header-nav__list">
-                <li class="main-header-nav__item"> <a href="#">Главная</a></li>
-                <li class="main-header-nav__item"> <a href="#">О производителе</a></li>
-                <li class="main-header-nav__item"> <a href="#">Решения CEL-FI</a></li>
-                <li class="main-header-nav__item"> <a href="#">Доставка и оплата</a></li>
-                <li class="main-header-nav__item"> <a href="#">Гарантии</a></li>
-                <li class="main-header-nav__item"> <a href="#">Поддержка</a></li>
-                <li class="main-header-nav__item"> <a href="#">FAQ</a></li>
-                <li class="main-header-nav__item"> <a href="#">Контакты</a></li>
-            </ul>
+            <div class="main-header-mobile-menu">
+                <ul class="main-header-nav__list">
+                    <li class="main-header-nav__item"> <a href="#">Главная</a></li>
+                    <li class="main-header-nav__item"> <a href="#">О производителе</a></li>
+                    <li class="main-header-nav__item"> <a href="#">Решения CEL-FI</a></li>
+                    <li class="main-header-nav__item"> <a href="#">Доставка и оплата</a></li>
+                    <li class="main-header-nav__item"> <a href="#">Гарантии</a></li>
+                    <li class="main-header-nav__item"> <a href="#">Поддержка</a></li>
+                    <li class="main-header-nav__item"> <a href="#">FAQ</a></li>
+                    <li class="main-header-nav__item"> <a href="#">Контакты</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -241,6 +244,7 @@
         </div>
     </footer>
     <!-- main script-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.min.js"></script><![endif]-->

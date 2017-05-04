@@ -1,1 +1,1 @@
-"use strict";
+"use strict";$(document).on("click","#bNavBtn",function(t){t.preventDefault(),$("html").toggleClass("mNavIsVisible")});
