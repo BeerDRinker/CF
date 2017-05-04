@@ -1,1 +1,1 @@
-"use strict";$(document).on("click","#bNavBtn",function(t){t.preventDefault(),$("html").toggleClass("mNavIsVisible")});
+"use strict";$(document).on("click","#main-header-mobile__button ",function(e){e.preventDefault(),$("html").toggleClass("mNavIsVisible")});
