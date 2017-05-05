@@ -1,1 +1,1 @@
-"use strict";$(document).on("click","#main-header-mobile__button ",function(e){e.preventDefault(),$("html").toggleClass("mNavIsVisible")});
+"use strict";$(document).ready(function(){$("#nav-icon3").click(function(){$(this).toggleClass("open"),$(".main-header-mobile-menu").toggleClass("show-mobile-nav")})});
